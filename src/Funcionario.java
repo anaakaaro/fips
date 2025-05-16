@@ -11,4 +11,11 @@ public class Funcionario {
         this.senha = senha;
         this.cargo = cargo;
     }
+
+    public void exibirFuncionario(){
+        System.out.println("Nome: " + nome);
+        System.out.println("Login: " + login);
+        System.out.println("Senha: " + senha);
+        System.out.println("Cargo: " + cargo);
+    }
 }
