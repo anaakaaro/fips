@@ -1,12 +1,14 @@
 public class App {
     public static void main(String[] args) throws Exception {
+        //cadastrando endereço do fornecedor
         Endereco endFornecedor1 = new Endereco(
             "Rua das flores", 
-            "168A", 
+            "168 A", 
             "Bairro Jardim", 
             "Contagem", 
             "30303006");
         
+        //cadastrando o fornecedor
         Fornecedor fornecedor1 = new Fornecedor(
             "OBRAS E REVSTIMENTOS",
             "02545548568", 
@@ -14,19 +16,22 @@ public class App {
             "emailteste@gmail.com", 
             endFornecedor1);
         
+        //exibir fornecedor
         fornecedor1.exibirFornecedor();
         System.out.println(fornecedor1.getRazaoSocial());
 
-        Produto salgadinho = new Produto(
+        //cadastrando o produto
+        Produto rodasCarro = new Produto(
             "325", 
-            3.25, 
+            500.00, 
             100, 
-            "Salgadinho de milho.", 
+            "Rodas para carro.", 
             fornecedor1, 
             "Prateleira 5.");
 
-        salgadinho.exibirProduto();
+        //exibir produto
+        rodasCarro.exibirProduto();
 
-        salgadinho.exibirLocalizacao();
+    
     }
 }
