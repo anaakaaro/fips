@@ -7,7 +7,7 @@ public class Produto {
     private String localizacao;
     
     //construtor
-
+    //comentario novo
     public Produto(String codigo, double valor, int quantidade, String descricao, Fornecedor fornecedor, String localizacao){
         this.codigo = codigo;
         this.valor = valor;
